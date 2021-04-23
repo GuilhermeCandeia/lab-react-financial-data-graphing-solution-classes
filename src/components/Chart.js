@@ -130,7 +130,7 @@ class ChartBox extends React.Component {
         <div className="form-group">
           <label>Currency</label>
           <select
-            className="form-control"
+            class="form-control"
             name="currency"
             onChange={this.handleChange}
             value={this.state.filter.currency}
@@ -144,6 +144,12 @@ class ChartBox extends React.Component {
           <strong>Max. Value </strong>
           <span>{Math.max(...this.state.values)}</span>
         </div>
+
+        <div className="d-flex flex-column">
+          <strong>Min. Value</strong>
+          <span>{Math.min(...this.state.values)}</span>
+        </div>
+
         <canvas id="chart" width="200"></canvas>
       </div>
     );
