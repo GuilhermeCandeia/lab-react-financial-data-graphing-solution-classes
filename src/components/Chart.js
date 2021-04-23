@@ -140,6 +140,10 @@ class ChartBox extends React.Component {
             <option value="BRL">Brazillian Real</option>
           </select>
         </div>
+        <div className="d-flex flex-column">
+          <strong>Max. Value </strong>
+          <span>{Math.max(...this.state.values)}</span>
+        </div>
         <canvas id="chart" width="200"></canvas>
       </div>
     );
