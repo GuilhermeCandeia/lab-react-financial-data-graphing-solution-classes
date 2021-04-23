@@ -130,7 +130,7 @@ class ChartBox extends React.Component {
         <div className="form-group">
           <label>Currency</label>
           <select
-            className="form-control"
+            class="form-control"
             name="currency"
             onChange={this.handleChange}
             value={this.state.filter.currency}
